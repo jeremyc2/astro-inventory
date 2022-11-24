@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import tailwindLitPlugin from "tailwind-lit-rollup-plugin";
 
 // https://astro.build/config
 import lit from "@astrojs/lit";
@@ -8,5 +9,8 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), lit()]
+  integrations: [lit(), tailwind()],
+  vite: {
+    plugins: [tailwindLitPlugin()]
+  }
 });

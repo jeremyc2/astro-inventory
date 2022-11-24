@@ -18,6 +18,7 @@
     "firebase": "^9.14.0",
     "firebaseui": "^6.0.2",
     "lit": "^2.4.1",
+    "tailwind-lit-rollup-plugin": "github:jeremyc2/tailwind-lit-rollup-plugin",
     "tailwindcss": "^3.0.24",
     "zod": "^3.19.1"
   }
