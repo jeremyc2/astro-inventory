@@ -1,4 +1,4 @@
-import {html, css, LitElement} from 'lit';
+import {css, html, LitElement} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
 
 @customElement('simple-greeting')
@@ -9,6 +9,6 @@ export class SimpleGreeting extends LitElement {
   name = 'Somebody';
 
   render() {
-    return html`<p>Hello, ${this.name}!</p>`;
+    return html`<p class="bg-slate-600">Hello, ${this.name}!</p>`;
   }
 }

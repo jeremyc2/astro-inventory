@@ -1,16 +1,10 @@
 ---
+import { SimpleGreeting } from '../components/simple-greeting';
 import Layout from '../layouts/Layout.astro';
-import { createItem } from '../services/inventoryDatabase';
 ---
 
 <Layout title="Inventory">
 	<main>
-		<script>
-			document.querySelector("#create-item")?.addEventListener("click", 
-				() => {
-					createItem("book", { name: "book", contributors: ["Jeremy C."] })
-				})
-		</script>
-		<button id="create-item">Create Item</button>
+		<SimpleGreeting />
 	</main>
 </Layout>

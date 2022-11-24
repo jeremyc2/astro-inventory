@@ -17,7 +17,7 @@ export async function createItem(id: string, newItem: Item) {
 }
 
 export function getItems() {
-    
+
 }
 
 export function updateItem() {
