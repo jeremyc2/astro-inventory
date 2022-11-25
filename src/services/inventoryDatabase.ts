@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { doc, setDoc } from "firebase/firestore"; 
-import { db } from "../firebase"
+import { db } from "../firebase/firebase"
 
 const Item = z.object({
     contributors: z.array(z.string()),
