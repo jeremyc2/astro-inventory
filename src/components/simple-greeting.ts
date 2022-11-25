@@ -12,6 +12,6 @@ export class SimpleGreeting extends LitElement {
   name = 'Somebody';
 
   render() {
-    return html`<p class="bg-red-200">Hello, ${this.name}!</p>`;
+    return html`<p class="text-lg p-4 m-0">Hello, ${this.name}!</p>`;
   }
 }
