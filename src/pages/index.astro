@@ -4,7 +4,15 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Inventory">
+	<script>
+		import { createItem } from "../services/database"
+
+		document.getElementById("create-item")?.addEventListener("click", () => {
+			createItem("first", { contributors: [ window.user.uid ], name: "1st-item" })
+		})
+	</script>
 	<main>
 		<LoginButton client:load></LoginButton>
+		<button id="create-item" class="h-10 px-6 font-semibold rounded-md border-black border-2">Create</button>
 	</main>
 </Layout>
